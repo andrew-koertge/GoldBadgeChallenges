@@ -52,9 +52,6 @@ namespace Challenge2Console
             isValidQ.Enqueue(isClaimValid);
         }
 
-        public string ReturnBuiltQueue(Queue<int> claimIDQ)
-        {
-
-        }
+        
     }
 }

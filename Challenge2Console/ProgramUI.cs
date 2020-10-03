@@ -27,6 +27,7 @@ namespace Challenge2Console
                     break;
                 default:
                     Console.WriteLine("Invalid Choice. Please try again.");
+                    Console.ReadLine();
                     Run();
                     break;
             }

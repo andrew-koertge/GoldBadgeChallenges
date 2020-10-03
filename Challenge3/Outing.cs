@@ -8,6 +8,7 @@ namespace Challenge3
 {
     public class Outing
     {
+       
         public enum TypeOfOuting
         {
             Golf = 1,

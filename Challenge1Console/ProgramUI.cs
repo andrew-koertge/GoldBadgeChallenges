@@ -37,8 +37,32 @@ namespace Challenge1Console
                     repo.AddNewItem(menuItems);
                     break;
                 case "3":
-                    Console.WriteLine("Which item do you want to remove?");
+                    Console.WriteLine("Which item do you want to remove? \n" +
+                                      "1. Club sandwich \n" +
+                                      "2. House salad \n" +
+                                      "3. Tomato soup \n" +
+                                      "4. Chocolate cake \n");
                     string deletedMenuItem = Console.ReadLine();
+                    switch (deletedMenuItem)
+                    {
+                        case "1":
+                            repo.DeleteMenuItem(menuItems);
+                            break;
+                        case "2":
+                            repo.DeleteMenuItem(menuItems);
+                            break;
+                        case "3":
+                            repo.DeleteMenuItem(menuItems);
+                            break;
+                        case "4":
+                            repo.DeleteMenuItem(menuItems);
+                            break;
+                        default:
+                            Console.WriteLine("Invalid selection. Please try again.");
+                            Console.ReadLine();
+                            Run();
+                            break;
+                    }
                     break;
                 case "4":
                     Console.WriteLine("Here are all current menu items: \n");
@@ -46,6 +70,8 @@ namespace Challenge1Console
                     break;
                 default:
                     Console.WriteLine("Invalid selection. Please try again.");
+                    Console.ReadLine();
+                    Run();
                     break;
             }
         }

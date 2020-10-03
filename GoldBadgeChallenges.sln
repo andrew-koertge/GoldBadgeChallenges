@@ -11,6 +11,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Challenge2Console", "Challe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Challenge3Console", "Challenge3\Challenge3Console.csproj", "{F5395F19-F055-44FC-AFC9-AA0E5A6BDBF8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Challenge3Test", "Challenge3Test\Challenge3Test.csproj", "{4770F2FC-E2B8-4190-8A5F-EA8E4214E38C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F5395F19-F055-44FC-AFC9-AA0E5A6BDBF8} = {F5395F19-F055-44FC-AFC9-AA0E5A6BDBF8}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +38,10 @@ Global
 		{F5395F19-F055-44FC-AFC9-AA0E5A6BDBF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5395F19-F055-44FC-AFC9-AA0E5A6BDBF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5395F19-F055-44FC-AFC9-AA0E5A6BDBF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4770F2FC-E2B8-4190-8A5F-EA8E4214E38C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4770F2FC-E2B8-4190-8A5F-EA8E4214E38C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4770F2FC-E2B8-4190-8A5F-EA8E4214E38C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4770F2FC-E2B8-4190-8A5F-EA8E4214E38C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
