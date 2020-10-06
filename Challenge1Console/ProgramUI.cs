@@ -31,9 +31,41 @@ namespace Challenge1Console
                     string foodChoice = Console.ReadLine();
                     break;
                 case "2":
+                    //Add new item name
                     Console.WriteLine("What will the new item be called?");
                     string newMenuItem = Console.ReadLine();
                     menuItems.ItemName = newMenuItem;
+                    //Add new item description
+                    Console.WriteLine("Give a brief description of the item.");
+                    string newMenuDescription = Console.ReadLine();
+                    menuItems.ItemDescription = newMenuDescription;
+                    //Add new list of ingredients for item
+                    bool addNewIngredient = true;
+                    while (addNewIngredient)
+                    {
+                        Console.WriteLine("List an ingredient in the item.");
+                        string newIngredient = Console.ReadLine();
+                        menuItems.ListOfIngredients.Add(newIngredient);
+                        Console.WriteLine("Do you have another ingredient to add? y/n");
+                        string continueToAdd = Console.ReadLine();
+                        if (continueToAdd == "y")
+                        {
+                            continue;
+                        } 
+                        else if (continueToAdd == "n")
+                        {
+                            addNewIngredient = false;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Invalid option. Please type y or n to continue.");
+                        }
+                    }
+                    //Add new item price
+                    Console.WriteLine("What will the price of the item be?");
+                    string newItemPrice = Console.ReadLine();
+                    menuItems.ItemPrice = Decimal.Parse(newItemPrice);
+                    //Add new item with all properties to menu list
                     repo.AddNewItem(menuItems);
                     break;
                 case "3":
