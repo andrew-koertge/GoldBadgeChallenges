@@ -1,15 +1,15 @@
 # ElevenFifty Academy Gold Badge Challenges
-###This is my submission for my 3 Gold Badge challenges
+### This is my submission for my 3 Gold Badge challenges
 The following challenges were all completed using C# and include unit tests
 
-#My thoughts about this challenge
+# My thoughts about this challenge
 I had my fair share of struggles and difficulties along the way. I'd like to detail some of them below:
 1. Having to learn about queues and how to implement them
 2. Trying to juggle different data structures and figuring out how to use them properly
 3. Unit testing was a real struggle, they never felt right and always seemed like they served no real purpose
 4. Attempting to figure out how to keep code clean while still being functional presented challenges
 
-#Things I would change going forward
+# Things I would change going forward
 1. Give myself more time
   1a. This is the worst one for me. I would panic about the deadline and lose focus trying to get everything done at once
   1b. I need to calm my nerves more and focus on the task at hand.
