@@ -23,9 +23,39 @@ namespace Challenge1Console
         }
 
         //delete
-        public void DeleteMenuItem(MenuItems deletedItem)
+        public bool DeleteMenuItem(string name)
         {
-            _listofMenuItems.Remove(deletedItem);
+            MenuItems item = GetMenuItemsByName(name);
+
+            if(item == null)
+            {
+                return false;
+            }
+
+            int menuCount = _listofMenuItems.Count;
+            _listofMenuItems.Remove(item);
+
+            if(menuCount > _listofMenuItems.Count)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        //helper method
+        public MenuItems GetMenuItemsByName(string name)
+        {
+            foreach(MenuItems item in _listofMenuItems)
+            {
+                if(item.ItemName == name)
+                {
+                    return item;
+                }
+            }
+            return null;
         }
     }
 }

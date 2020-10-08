@@ -16,14 +16,30 @@ namespace Challenge2Console
                               "3. Enter a new claim");
 
             string choice = Console.ReadLine();
-
+            ClaimRepository repo = new ClaimRepository();
             switch (choice)
             {
                 case "1":
+                    repo.SeeAllClaims();
                     break;
                 case "2":
+                    Queue<Claim> claim = new Queue<Claim>();
+                    claim.Peek();
+                    Console.WriteLine("Do you want to deal with this claim now? (y/n)");
+                    string claimChoice = Console.ReadLine();
+                    if (claimChoice == "y")
+                    {
+                        repo.TakeCareOfNextClaim(true);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Returning to main menu.");
+                        Console.ReadLine();
+                        Run();
+                    }
                     break;
                 case "3":
+                    repo.AddNewClaim();
                     break;
                 default:
                     Console.WriteLine("Invalid Choice. Please try again.");

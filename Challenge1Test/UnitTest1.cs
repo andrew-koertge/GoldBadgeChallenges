@@ -2,6 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Challenge1Console;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Challenge1Test
 {
@@ -31,7 +32,7 @@ namespace Challenge1Test
         [TestMethod]
         public void DeleteMenuItem_ReturnsUpdatedListOfItems()
         {
-            //Assert
+            //Arrange
             MenuRepository repo = new MenuRepository();
             string itemName = "Club Sandwich";
             int itemNumber = 1;
@@ -41,10 +42,10 @@ namespace Challenge1Test
             MenuItems menuItem = new MenuItems(itemNumber, itemName, itemDescription, listOfIngredients, itemPrice);
 
             //Act
-            repo.DeleteMenuItem(menuItem);
+            repo.DeleteMenuItem(itemName);
 
             //Assert
-            Assert.AreEqual("Club Sandwich", menuItem.ItemName);
+            Assert.AreEqual(itemName, menuItem.ItemName);
         }
     }
 }

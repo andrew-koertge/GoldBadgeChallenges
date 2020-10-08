@@ -31,7 +31,6 @@ namespace Challenge3
             Console.WriteLine("New outing added.");
             outingTotal++;
             program.Run();
-
         }
 
         //Option 3: Calculate all outings

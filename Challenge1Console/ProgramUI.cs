@@ -78,16 +78,16 @@ namespace Challenge1Console
                     switch (deletedMenuItem)
                     {
                         case "1":
-                            repo.DeleteMenuItem(menuItems);
+                            repo.DeleteMenuItem(menuItems.ItemName);
                             break;
                         case "2":
-                            repo.DeleteMenuItem(menuItems);
+                            repo.DeleteMenuItem(menuItems.ItemName);
                             break;
                         case "3":
-                            repo.DeleteMenuItem(menuItems);
+                            repo.DeleteMenuItem(menuItems.ItemName);
                             break;
                         case "4":
-                            repo.DeleteMenuItem(menuItems);
+                            repo.DeleteMenuItem(menuItems.ItemName);
                             break;
                         default:
                             Console.WriteLine("Invalid selection. Please try again.");

@@ -2,7 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Challenge3Console;
 using System.Collections.Generic;
-
+using Challenge3;
 
 namespace Challenge3Test
 {
@@ -14,7 +14,7 @@ namespace Challenge3Test
         {
             //Arrange
             OutingRepository repo = new OutingRepository();
-            int outingTotal;
+            int outingTotal = 0;
             //Act
             repo.AddNewOuting();
             //Assert
